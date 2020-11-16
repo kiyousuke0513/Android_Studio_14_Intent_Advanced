@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Intent_Advanced</string>
+    <string name="BTN_Phone">Phone</string>
+    <string name="BTN_Google_Map">Google Map</string>
+    <string name="BTN_Google_Chrome">Google Chrome</string>
+    <string name="TV_Phone">撥出104查號台號碼</string>
+    <string name="TV_Google_Map">開啟Google Map</string>
+    <string name="TV_Google_Chrome">開啟Google Chrome</string>
+</resources>

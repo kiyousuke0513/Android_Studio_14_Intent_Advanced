@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_Phone"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:onClick="BTN_Phone_Trig"
+        android:text="@string/BTN_Phone"
+        app:layout_constraintBottom_toTopOf="@+id/button_Google_Map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_Google_Map"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:onClick="BTN_Google_Map_Trig"
+        android:text="@string/BTN_Google_Map"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <Button
+        android:id="@+id/button_Google_Chrome"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:onClick="BTN_Google_Chrome_Trig"
+        android:text="@string/BTN_Google_Chrome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Google_Map" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/textView_Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TV_Phone"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_Phone"
+        app:layout_constraintEnd_toEndOf="@+id/button_Phone"
+        app:layout_constraintStart_toStartOf="@+id/button_Phone" />
+
+    <TextView
+        android:id="@+id/textView_Google_Map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TV_Google_Map"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_Google_Map"
+        app:layout_constraintEnd_toEndOf="@+id/button_Google_Map"
+        app:layout_constraintStart_toStartOf="@+id/button_Google_Map" />
+
+    <TextView
+        android:id="@+id/textView_Google_Chrome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TV_Google_Chrome"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_Google_Chrome"
+        app:layout_constraintEnd_toEndOf="@+id/button_Google_Chrome"
+        app:layout_constraintStart_toStartOf="@+id/button_Google_Chrome" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
